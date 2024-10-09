@@ -1,0 +1,85 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  section {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: #444; /* Darker background when scrolled */
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00; /* Color change on hover */
+  }
+  
+  section#home {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section h1, section h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for other sections */
+  section#about, section#services, section#portfolio, section#contact {
+    background-color: #f4f4f4;
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
